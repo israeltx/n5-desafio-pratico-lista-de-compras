@@ -53,19 +53,18 @@ select {
   --s48: 3rem;
 }
 
-/* Utility Classes */
+/* Layout Utility Classes */
 .container {
-  max-width: 375px;
+  max-width: 327px;
   margin: auto;
-  padding: 20px;
 }
 
 .desktop-only { display: none; }
 .mobile-only { display: initial; }
 
-@media (width > 375px) {
+@media (width > 390px) {
   .container {
-    max-width: 1440px;
+    max-width: 627px;
   }
 }
 
