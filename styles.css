@@ -46,6 +46,7 @@ select {
   --s12: 0.75rem;
   --s14: 0.875rem;
   --s16: 1rem;
+  --s18: 1.125rem;
   --s20: 1.25rem;
   --s24: 1.5rem;
   --s28: 1.75rem;
@@ -95,7 +96,7 @@ select {
   /* Font Family */
   --font-family: "Inter", sans-serif;
   /* Font Weights */
-  --fw-medim: 500;
+  --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
   /* Font Sizes */
@@ -109,8 +110,8 @@ select {
   /* Font Combinations */
   --title: var(--fw-bold) var(--fs-24)/var(--flh-32) var(--font-family);
   --label: var(--fw-semi-bold) var(--fs-16)/var(--flh-20) var(--font-family);
-  --paragraphy: var(--fw-medim) var(--fs-16)/var(--flh-20) var(--font-family);
-  --link: var(--fw-medim) var(--fs-14)/var(--flh-16) var(--font-family);
+  --paragraphy: var(--fw-medium) var(--fs-16)/var(--flh-20) var(--font-family);
+  --link: var(--fw-medium) var(--fs-14)/var(--flh-16) var(--font-family);
 }
 
 /* "Voltar" button at the top left corner */
@@ -129,22 +130,46 @@ button {
 }
 
 /* List itens and input placeholder */
-p {
+p, input::placeholder {
   font: var(--paragraphy);
 }
 
 
 /* COMPONENTS */
-/* Buttons */
+/* Button Component*/
 button {
   border: none;
   background-color: var(--color-brand);
   padding: var(--s12) var(--s24);
   border-radius: 12px;
   color: var(--always-white);
-  transition: background-color 200ms;
+  transition: background-color 300ms;
   width: 100%;
   &:hover {
     background-color: var(--color-brand-hover);
   }
 }
+/* Text Field Component */
+input {
+  width: 100%;
+  border: 2px solid var(--border-primary);
+  background-color: var(--background-secondary);
+  border-radius: 12px;
+  padding: var(--s12) var(--s18);
+  transition: border 300ms;
+  
+  &::placeholder {
+    color: var(--content-tertiary);
+  }
+  &:hover {
+    border: 2px solid var(--border-hover);
+  }
+  &:focus {
+    outline: none;
+    border: 2px solid var(--color-brand);
+    &::placeholder {
+      color: var(--content-primary);
+    }
+  }
+}
+
