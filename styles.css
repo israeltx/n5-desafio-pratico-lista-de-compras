@@ -135,3 +135,16 @@ p {
 
 
 /* COMPONENTS */
+/* Buttons */
+button {
+  border: none;
+  background-color: var(--color-brand);
+  padding: var(--s12) var(--s24);
+  border-radius: 12px;
+  color: var(--always-white);
+  transition: background-color 200ms;
+  width: 100%;
+  &:hover {
+    background-color: var(--color-brand-hover);
+  }
+}
