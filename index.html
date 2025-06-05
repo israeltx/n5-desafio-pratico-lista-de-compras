@@ -15,7 +15,52 @@
 <html>
   <body>
     <main class="container">
-      <p>testfdafdsafdsafdsafdffffffffffffffffffffff</p>
+      <!-- Status Bar -->
+      <header class="mobile-only">
+        <div class="time"><p>9:41</p></div>
+        <div class="status icons">
+          <img src="assets/icons/status-icon-network-signal.svg" alt="">
+          <img src="assets/icons/status-icon-wifi-signal.svg" alt="">
+          <img src="assets/icons/status-icon-battery.svg" alt="">
+        </div>
+      </header>
+      <nav><a href=""><img src="assets/icons/arrow-back.svg" alt="">Voltar</a></nav>
+      <!-- Add item section -->
+      <section id="add-item">
+        <h1>Compras da semana</h1>
+        <input type="submit" value="" placeholder="Adicione um novo item">
+        <button>Adicionar item</button>
+      </section>
+      <!-- List section -->
+      <section id="list">
+        <fieldset>
+          <div class="field">
+            <input type="checkbox"/>
+            <label>Pão de forma</label>   
+            <img src="assets/icons/trash-can.svg" alt="">         
+          </div>
+          <div class="field">
+            <input type="checkbox"/>
+            <label>Café preto</label>   
+            <img src="assets/icons/trash-can.svg" alt="">         
+          </div>
+          <div class="field">
+            <input type="checkbox"/>
+            <label>Suco de laranja</label>   
+            <img src="assets/icons/trash-can.svg" alt="">         
+          </div>
+          <div class="field">
+            <input type="checkbox"/>
+            <label>Bolacha</label>   
+            <img src="assets/icons/trash-can.svg" alt="">         
+          </div>
+        </fieldset>
+        <div class="alert">
+          <img src="assets/icons/warning-circle-filled.svg" alt="">
+          <p>O item foi removido da lista</p>
+          <img src="assets/icons/delete.svg" alt="">
+        </div>
+      </section>
     </main>
   </body>
 </html>
