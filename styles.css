@@ -151,7 +151,6 @@ button {
 }
 /* Text Field Component */
 input {
-  
   width: 100%;
   border: 2px solid var(--border-primary);
   background-color: var(--background-secondary);
@@ -172,5 +171,21 @@ input {
       color: var(--content-primary);
     }
   }
-  
+}
+/* Status Bar Component */
+header.status-bar{
+  margin-top: var(--s16);
+  margin-bottom: var(--s48);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .status-icons {
+    display: flex;
+    gap: var(--s4);
+    
+    & img {
+      max-width: 25px;
+    }
+  }
 }
