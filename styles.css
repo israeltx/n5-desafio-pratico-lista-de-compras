@@ -92,8 +92,20 @@ select {
 /* TYPOGRAPHY */
 :root {
   /* Font Family */
-  /* Font Sizes */
+  --font-family: "Inter", sans-serif;
   /* Font Weights */
+  --fw-medim: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  /* Font Sizes */
+  --fw-14: 0.875rem;
+  --fw-16: 1rem;
+  --fw-24: 1.5rem;
+  /* Font Line Height */
+  --flh-32: 2rem;
+  --flh-20: 1.25rem;
+  --flh-16: 1rem;
+  /* Font Combinations */
   --h1: var(--fw-xbold) var(--fs-24)/1.32 var(--archivo-ff);
 }
 
