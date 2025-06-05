@@ -66,6 +66,7 @@ select {
   .container {
     max-width: 627px;
   }
+  .desktop-only { display: initial; } 
   .mobile-only { display: none; }
 }
 
