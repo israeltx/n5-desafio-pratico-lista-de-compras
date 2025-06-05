@@ -130,7 +130,7 @@ button {
 }
 
 /* List itens and input placeholder */
-p, input::placeholder {
+p, label, input::placeholder {
   font: var(--paragraphy);
 }
 
@@ -151,6 +151,7 @@ button {
 }
 /* Text Field Component */
 input {
+  
   width: 100%;
   border: 2px solid var(--border-primary);
   background-color: var(--background-secondary);
@@ -171,5 +172,5 @@ input {
       color: var(--content-primary);
     }
   }
+  
 }
-
