@@ -98,15 +98,38 @@ select {
   --fw-semi-bold: 600;
   --fw-bold: 700;
   /* Font Sizes */
-  --fw-14: 0.875rem;
-  --fw-16: 1rem;
-  --fw-24: 1.5rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-24: 1.5rem;
   /* Font Line Height */
   --flh-32: 2rem;
   --flh-20: 1.25rem;
   --flh-16: 1rem;
   /* Font Combinations */
-  --h1: var(--fw-xbold) var(--fs-24)/1.32 var(--archivo-ff);
+  --title: var(--fw-bold) var(--fs-24)/var(--flh-32) var(--font-family);
+  --label: var(--fw-semi-bold) var(--fs-16)/var(--flh-20) var(--font-family);
+  --paragraphy: var(--fw-medim) var(--fs-16)/var(--flh-20) var(--font-family);
+  --link: var(--fw-medim) var(--fs-14)/var(--flh-16) var(--font-family);
+}
+
+/* "Voltar" button at the top left corner */
+a {
+  font: var(--link);
+}
+
+/* Compras da semana */
+h1 {
+  font: var(--title);
+}
+
+/* Buttons and alert texts */
+button {
+  font: var(--label);
+}
+
+/* List itens and input placeholder */
+p {
+  font: var(--paragraphy);
 }
 
 
