@@ -173,7 +173,7 @@ input {
   }
 }
 /* Status Bar Component */
-header.status-bar{
+header.status-bar {
   margin-top: var(--s16);
   margin-bottom: var(--s48);
   display: flex;
@@ -183,9 +183,15 @@ header.status-bar{
   & .status-icons {
     display: flex;
     gap: var(--s4);
-    
+
     & img {
       max-width: 25px;
     }
+  }
+}
+
+@media (width > 390px) {
+  header.status-bar {
+    display: none;
   }
 }
