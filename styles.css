@@ -167,6 +167,47 @@ button {
     background-color: var(--color-brand-hover);
   }
 }
+
+/* Status Bar Component */
+header.status-bar {
+  margin-top: var(--s16);
+  margin-bottom: var(--s48);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .status-icons {
+    display: flex;
+    gap: var(--s4);
+
+    & img {
+      max-width: 25px;
+    }
+  }
+}
+
+@media (width > 390px) {
+  header.status-bar {
+    display: none;
+  }
+
+  /* Logo Component */
+  .logo {
+    display: block;
+    margin: var(--s24) auto var(--s48);
+  }
+}
+
+/* Navigation Component */
+nav {
+  margin-bottom: var(--s16);
+  & a {
+    display: flex;
+    gap: var(--s8);
+    align-items: center;
+  }
+}
+
 /* New Item Component */
 .new-item {
   display: flex;
@@ -196,57 +237,21 @@ button {
       }
     }
   }
-}
 
-@media (width > 390px) {
-  .new-item {
-    flex-direction: row;
-    & button {
-      max-width: 160px;
+  @media (width > 390px) {
+    .new-item {
+      flex-direction: row;
+      & button {
+        max-width: 160px;
+      }
     }
   }
 }
 
+/* List Component */
 
 
-/* Status Bar Component */
-header.status-bar {
-  margin-top: var(--s16);
-  margin-bottom: var(--s48);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  & .status-icons {
-    display: flex;
-    gap: var(--s4);
-
-    & img {
-      max-width: 25px;
-    }
-  }
-}
-/* Navigation Component */
-nav {
-  margin-bottom: var(--s16);
-  & a {
-    display: flex;
-    gap: var(--s8);
-    align-items: center;
-  }
-}
-
-@media (width > 390px) {
-  header.status-bar {
-    display: none;
-  }
-
-  /* Logo Component */
-  .logo {
-    display: block;
-    margin: var(--s24) auto var(--s48);
-  }
-}
 /* Alert Component */
 .alert {
   display: flex;
