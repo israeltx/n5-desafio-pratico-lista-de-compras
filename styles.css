@@ -119,6 +119,10 @@ body {
   --link: var(--fw-medium) var(--fs-14)/var(--flh-16) var(--font-family);
 }
 
+body {
+  font-family: var(--font-family);
+}
+
 /* "Voltar" button at the top left corner */
 a {
   font: var(--link);
