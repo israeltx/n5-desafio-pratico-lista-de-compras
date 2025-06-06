@@ -163,7 +163,7 @@ button {
     background-color: var(--color-brand-hover);
   }
 }
-/* Text Field Component */
+/* New Item Component */
 .new-item {
   display: flex;
   flex-direction: column;
@@ -193,6 +193,18 @@ button {
     }
   }
 }
+
+@media (width > 390px) {
+  .new-item {
+    flex-direction: row;
+    & button {
+      max-width: 160px;
+    }
+  }
+}
+
+
+
 /* Status Bar Component */
 header.status-bar {
   margin-top: var(--s16);
