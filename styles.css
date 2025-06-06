@@ -194,4 +194,10 @@ header.status-bar {
   header.status-bar {
     display: none;
   }
+  
+  /* Logo Component */
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
 }
