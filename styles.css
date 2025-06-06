@@ -247,3 +247,18 @@ nav {
     margin: var(--s24) auto var(--s48);
   }
 }
+/* Alert Component */
+.alert {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--color-danger);
+  border-radius: var(--s12);
+  color: var(--always-white);
+  padding: var(--s12);
+  
+  & .message {
+    display: flex;
+    gap: var(--s8);
+  }
+}
