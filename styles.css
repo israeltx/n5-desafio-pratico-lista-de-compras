@@ -91,6 +91,10 @@ select {
   --border-hover: #B9C2D0;
 }
 
+body {
+  background-color: var(--background-primary);
+}
+
 /* TYPOGRAPHY */
 :root {
   /* Font Family */
