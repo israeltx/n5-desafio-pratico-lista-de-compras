@@ -215,6 +215,6 @@ nav {
   /* Logo Component */
   .logo {
     display: block;
-    margin: 0 auto;
+    margin: var(--s24) auto var(--s48);
   }
 }
