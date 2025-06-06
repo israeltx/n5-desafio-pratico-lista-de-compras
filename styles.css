@@ -325,4 +325,8 @@ nav {
     display: flex;
     gap: var(--s8);
   }
+
+  &.hide {
+    display: none;
+  }
 }
