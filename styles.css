@@ -273,7 +273,38 @@ nav {
       border-radius: var(--s12);
 
       & input {
+        display: none;
+        
+        &:checked + .custom-checkbox {        
+          background-color: var(--color-brand);
+          border-color: var(--color-brand);
+
+          & img {
+            display: initial;
+          }
+        }
+        
+      }
+      & .custom-checkbox {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 16px;
+        height: 16px;
+
+        margin-bottom: -2px;
         margin-right: var(--s8);
+
+        border: 1px solid var(--border-primary);
+        border-radius: 6px;
+
+        &:hover {
+          border: 1px solid var(--border-hover);
+        }
+        & img {
+          display: none;
+        }
       }
     }
   }
