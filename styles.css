@@ -152,6 +152,10 @@ p, label, input::placeholder {
   font: var(--paragraphy);
 }
 
+label {
+  color: var(--content-secondary);
+}
+
 
 /* COMPONENTS */
 /* Button Component*/
@@ -249,7 +253,31 @@ nav {
 }
 
 /* List Component */
+#list {
+  & fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s12);
 
+    border: none;
+    margin-bottom: var(--s32);
+
+    & .field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: var(--s16) var(--s12);
+
+      background-color: var(--background-secondary);
+      border-radius: var(--s12);
+
+      & input {
+        margin-right: var(--s8);
+      }
+    }
+  }
+}
 
 
 /* Alert Component */
