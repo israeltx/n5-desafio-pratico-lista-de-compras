@@ -117,11 +117,19 @@ select {
 /* "Voltar" button at the top left corner */
 a {
   font: var(--link);
+  color: var(--color-brand);
+  &:hover {
+    path {
+      fill: #A52C6B;
+    }
+    color: var(--color-brand-hover);
+  }
 }
 
 /* Compras da semana */
 h1 {
   font: var(--title);
+  color: var(--content-primary);
 }
 
 /* Buttons and alert texts */
@@ -189,12 +197,21 @@ header.status-bar {
     }
   }
 }
+/* Navigation Component */
+nav {
+  margin-bottom: var(--s16);
+  & a {
+    display: flex;
+    gap: var(--s8);
+    align-items: center;
+  }
+}
 
 @media (width > 390px) {
   header.status-bar {
     display: none;
   }
-  
+
   /* Logo Component */
   .logo {
     display: block;
