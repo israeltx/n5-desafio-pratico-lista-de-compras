@@ -35,6 +35,7 @@ form.addEventListener('submit', (event) => {
 });
 
 
+const alert = document.querySelector('.alert');
 
 document.addEventListener('click', function (event) {
   // Verifica se clicou em uma imagem com a classe 'delete'
@@ -44,5 +45,10 @@ document.addEventListener('click', function (event) {
     if (fieldDiv) {
       fieldDiv.remove();
     }
+    alert.classList.remove('hide')
+    // Set timer to remove the alert from the screen
+    setTimeout( () => {
+      alert.classList.add('hide')
+    }, '2000')
   }
 });
