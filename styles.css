@@ -160,6 +160,7 @@ label {
 /* COMPONENTS */
 /* Button Component*/
 button {
+  cursor: pointer;
   border: none;
   background-color: var(--color-brand);
   padding: var(--s12) var(--s24);
@@ -169,6 +170,13 @@ button {
   width: 100%;
   &:hover {
     background-color: var(--color-brand-hover);
+  }
+}
+
+/* Delete Button Componet */
+img[src*='trash'] {
+  &:hover {
+    cursor: pointer;
   }
 }
 
