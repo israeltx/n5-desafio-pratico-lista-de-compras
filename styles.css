@@ -212,7 +212,7 @@ nav {
   }
 }
 
-/* New Item Component */
+/* New Item Form Component */
 .new-item {
   display: flex;
   flex-direction: column;
@@ -283,7 +283,6 @@ nav {
             display: initial;
           }
         }
-        
       }
       & .custom-checkbox {
         display: inline-flex;

@@ -3,7 +3,6 @@ const button = document.querySelector('button');
 const input = document.getElementById('new-item-input');
 const fieldset = document.querySelector('fieldset');
 
-
 // Submit button functionality
 form.addEventListener('submit', (event) => {
   // Stop the submit button from refreshing the page
@@ -49,3 +48,4 @@ form.addEventListener('submit', (event) => {
     input.value = '';
   }
 });
+
